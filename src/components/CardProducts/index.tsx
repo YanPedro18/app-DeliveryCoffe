@@ -23,7 +23,7 @@ interface TypeItemsCoffeCart {
 
 function CardProducts() {
 
-  const { listItemsCoffe, addItemCartCoffe, removeItemCartCoffe, deleteItemCoffee, finallyCoffe } = useContext(coffeContext)
+  const { listItemsCoffe, addItemCartCoffe, removeItemCartCoffe, deleteItemCoffee} = useContext(coffeContext)
 
   function handleAddItemCartCounter(coffe: TypeItemsCoffeCart) {
     addItemCartCoffe(coffe)
@@ -91,7 +91,7 @@ function CardProducts() {
               <h6>Total</h6>
               <span>{TotalOrderPrice.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</span>
             </PriceTotal>
-          <Link to='/Final' onClick={() => finallyCoffe()}>Confirmar Pedido</Link>
+          <Link to='/Final'>Confirmar Pedido</Link>
           </TotalPriceCartCoffe>
         </ProductsContent>
 
