@@ -23,7 +23,7 @@ interface TypeItemsCoffeCart {
 
 function CardProducts() {
 
-  const { listItemsCoffe, addItemCartCoffe, removeItemCartCoffe, deleteItemCoffee} = useContext(coffeContext)
+  const { listItemsCoffe, addItemCartCoffe, removeItemCartCoffe, deleteItemCoffee, finallyCoffe} = useContext(coffeContext)
 
   function handleAddItemCartCounter(coffe: TypeItemsCoffeCart) {
     addItemCartCoffe(coffe)
@@ -33,6 +33,9 @@ function CardProducts() {
   }
   function handleDeleteItemCartCoffe(coffe: TypeItemsCoffeCart) {
     deleteItemCoffee(coffe)
+  }
+  function handleFinished(item: string) {
+    finallyCoffe(item)
   }
 
   //reduce o primeiro parametro acumula o valor pra vc, ent se usar + ea continha, ele guarda tudo.
@@ -91,7 +94,7 @@ function CardProducts() {
               <h6>Total</h6>
               <span>{TotalOrderPrice.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</span>
             </PriceTotal>
-          <Link to='/Final'>Confirmar Pedido</Link>
+          <Link to='/Final' onClick={() => handleFinished("Finalizado")}>Confirmar Pedido</Link>
           </TotalPriceCartCoffe>
         </ProductsContent>
 
