@@ -91,7 +91,7 @@ function CardProducts() {
               <h6>Total</h6>
               <span>{TotalOrderPrice.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</span>
             </PriceTotal>
-          <Link to="/Finally" onClick={() => finallyCoffe()}>Confirmar Pedido</Link>
+          <Link to='/Final' onClick={() => finallyCoffe()}>Confirmar Pedido</Link>
           </TotalPriceCartCoffe>
         </ProductsContent>
 
