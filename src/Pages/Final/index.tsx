@@ -11,12 +11,10 @@ function Final() {
   }, [])
   
   return (
-    <>
         <FinnalyContainer>
             <img src={imgFinally} alt="" />
             <h4>Compra concluída !</h4>
         </FinnalyContainer>
-    </>
   )
 }
 
