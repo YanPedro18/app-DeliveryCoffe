@@ -1,0 +1,128 @@
+[
+    {   
+        "id": 1,
+        "imageProduct": "./coffe-1.svg",
+        "category": ["tradicional", "gelado"],
+        "productName": "Expresso Americano",
+        "content": "Expresso diluído, menos intenso que o tradicional",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 2,
+        "imageProduct": "./coffe-2.svg",
+        "category": ["tradicional"],
+        "productName": "Expresso Cremoso",
+        "content": "Café expresso tradicional com espuma cremosa",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 3,
+        "imageProduct": "./coffe-3.svg",
+        "category": ["tradicional", "gelado"],
+        "productName": "Expresso Gelado",
+        "content": "Bebida preparada com café expresso e cubos de gelo",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 4,
+        "imageProduct": "./coffe-4.svg",
+        "category": ["tradicional"],
+        "productName": "Expresso Tradicional",
+        "content": "O tradicional café feito com água quente e grãos moídos",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 5,
+        "imageProduct": "./coffe-5.svg",
+        "category": ["tradicional", "com leite"],
+        "productName": "Café com Leite",
+        "content": "Meio a meio de expresso tradicional com leite vaporizado",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 6,
+        "imageProduct": "./coffe-6.svg",
+        "category": ["tradicional", "com leite"],
+        "productName": "Latte",
+        "content": "Uma dose de café expresso com o dobro de leite e espuma cremosa",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 7,
+        "imageProduct": "./coffe-7.svg",
+        "category": ["tradicional", "com leite"],
+        "productName": "Capuccino",
+        "content": "Bebida com canela feita de doses iguais de café, leite e espuma",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 8,
+        "imageProduct": "./coffe-8.svg",
+        "category": ["tradicional", "com leite"],
+        "productName": "Macchiato",
+        "content": "Café expresso misturado com um pouco de leite quente e espuma",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 9,
+        "imageProduct": "./coffe-9.svg",
+        "category": ["tradicional", "com leite"],
+        "productName": "Mocaccino",
+        "content": "Café expresso com calda de chocolate, pouco leite e espuma",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 10,
+        "imageProduct": "./coffe-10.svg",
+        "category": ["especial", "com leite"],
+        "productName": "Chocolate Quente",
+        "content": "Bebida feita com chocolate dissolvido no leite quente e café",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 11,
+        "imageProduct": "./coffe-11.svg",
+        "category": ["especial", "alcoólico", "gelado"],
+        "productName": "Cubano",
+        "content": "Drink gelado de café expresso com rum, creme de leite e hortelã",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 12,
+        "imageProduct": "./coffe-12.svg",
+        "category": ["especial"],
+        "productName": "Havaiano",
+        "content": "Bebida adocicada preparada com café e leite de coco",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 13,
+        "imageProduct": "./coffe-13.svg",
+        "category": ["especial"],
+        "productName": "Árabe",
+        "content": "Bebida preparada com grãos de café árabe e especiarias",
+        "price": "9.90",
+        "quantity": 0
+    },
+    {   
+        "id": 14,
+        "imageProduct": "./coffe-14.svg",
+        "category": ["especial", "alcoólico"],
+        "productName": "Irlandês",
+        "content": "Bebida a base de café, uísque irlandês, açúcar e chantilly",
+        "price": "9.90",
+        "quantity": 0
+    }
+]
