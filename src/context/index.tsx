@@ -24,7 +24,7 @@ interface ContextType {
     addDb: (items: DataCoffe) => void
     removeDb: (items: DataCoffe) => void
     deleteItemCoffee: (data: DataCoffe) => void
-    finallyCoffe: () => void
+    finallyCoffe: (item: string) => void
 }
 interface PropsChildren {
     children: ReactNode
@@ -202,9 +202,10 @@ function ContextCoffe({ children }: PropsChildren) {
         }
     }
 
-    function finallyCoffe() {
+    function finallyCoffe(item: string) {
 
-        useEffect(() => {
+        if(item === "Finalizado") {
+                    useEffect(() => {
             setDb(dbJson)
         }, [])
 
@@ -212,6 +213,7 @@ function ContextCoffe({ children }: PropsChildren) {
         //     state.filter(items => items.quantity = 0))
         // setListItemsCoffe([])
         setTotalItemsCoffe(0)
+        }
     }
     return (
         <coffeContext.Provider value={{
