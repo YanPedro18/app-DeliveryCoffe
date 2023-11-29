@@ -1,6 +1,8 @@
 
 import { ReactNode, createContext, useEffect, useState } from 'react'
 import dbJson from "../db/db.json"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface DataCoffe {
     id: number;
@@ -59,7 +61,7 @@ function ContextCoffe({ children }: PropsChildren) {
                 ))
 
             setTotalItemsCoffe(state => state + 1)
-
+            toast.success("Item Adicionado ao Carrinho !");
             //para verificar tambem se a rota card não tiver algum item duplicado, ele somente adiciona o a quantity
             setDb((state) =>
                 state.map(coffeItem => coffeItem.id === data.id
@@ -76,7 +78,7 @@ function ContextCoffe({ children }: PropsChildren) {
             }
             setListItemsCoffe(state => [...state, NewItemCoffe])
             setTotalItemsCoffe(state => state + 1)
-
+            toast.success("Item Adicionado ao Carrinho !");
             //para a primeira rota de card, tambem ter o incremento no counter
             setDb((state) =>
                 state.map(coffeItem => coffeItem.id === data.id
@@ -101,6 +103,7 @@ function ContextCoffe({ children }: PropsChildren) {
                     : coffeItem
             ));
         setTotalItemsCoffe(state => state + 1)
+        toast.success("Item Adicionado ao Carrinho !");
     }
 
     function addDb(items: DataCoffe) {
@@ -110,7 +113,7 @@ function ContextCoffe({ children }: PropsChildren) {
                 : coffeItem
             ));
         setTotalItemsCoffe(state => state + 1)
-
+        toast.success("Item Adicionado ao Carrinho !");
         const existItem = listItemsCoffe.find(state => state.id === items.id)
 
         if (existItem) {
@@ -152,6 +155,7 @@ function ContextCoffe({ children }: PropsChildren) {
                     coffeItem
                 ));
             setTotalItemsCoffe(state => state - 1)
+            toast.success("Item Removido do Carrinho !");
         }
     }
 
@@ -173,7 +177,7 @@ function ContextCoffe({ children }: PropsChildren) {
                         : coffeItem
                 ));
         }
-
+        toast.success("Item Removido do Carrinho !");
 
     }
 
@@ -187,6 +191,7 @@ function ContextCoffe({ children }: PropsChildren) {
 
         if (coffe.quantity > 0) {
             setTotalItemsCoffe(state => state - coffe.quantity)
+            toast.success("Item Removido do Carrinho !");
             console.log(listItemsCoffe)
             setDb((state) =>
                 state.map((coffeItem) =>
@@ -219,8 +224,22 @@ function ContextCoffe({ children }: PropsChildren) {
             addDb,
             removeDb,
             deleteItemCoffee,
-            finallyCoffe }}>
+            finallyCoffe
+        }}>
             {children}
+            <ToastContainer
+                position="top-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
+      
         </coffeContext.Provider>
     )
 }
